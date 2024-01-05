@@ -26,7 +26,7 @@ pipeline {
 
                     deploy adapters: [tomcat9(credentialsId: credentialsId, path: '', url: tomcatUrl)],
                            contextPath: null,
-                           war: '**/target/*.war'
+                           war: '**/*.war'
                 }
             }
         }
