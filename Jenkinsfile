@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     def credentialsId = '7e29506f-5ca2-4334-b373-390a3ec4f734'
-                    def tomcatUrl = 'http://3.109.139.88:8080/'
+                    def tomcatUrl = 'http://3.109.139.88:8000/'
 
                     deploy adapters: [tomcat9(credentialsId: credentialsId, path: '', url: tomcatUrl)],
                            contextPath: null,
